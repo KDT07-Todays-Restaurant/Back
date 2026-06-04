@@ -67,7 +67,7 @@ public class KakaoSearchServiceImpl implements KakaoSearchService {
     	//유효성 검사
         vaildateKeyword(req);
 
-        Map<String, FilterStoreItemDTO> merge = new LinkedHashMap<>(); //임시저장소	
+        Map<String, FilterStoreItemDTO> merge = new LinkedHashMap<>(); //임시저장소
 
         String keyword = (req.getKeyword() == null || req.getKeyword().isBlank())
                 ? DEFAULT_QUERY
