@@ -6,13 +6,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="menu")
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
+@Builder
 public class Menu {
 
 	@Id
@@ -26,7 +30,7 @@ public class Menu {
 	@Column(name="menu_name", nullable=false, length=100)
 	private String menuName;
 	
-	@Column(name="menu_image", nullable=false, length=255)
+	@Column(name="menu_image", nullable=false, length=500)
 	private String menuImage;
 	
 	@Column(name="menu_price", nullable=false)
