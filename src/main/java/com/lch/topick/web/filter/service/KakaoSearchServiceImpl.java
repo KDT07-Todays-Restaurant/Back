@@ -201,7 +201,7 @@ public class KakaoSearchServiceImpl implements KakaoSearchService {
                 if (tag == null || tag.isBlank()) {
                     continue;
                 }
-                input.add(tag.trim() + " 맛집");
+                input.add(tag.trim());
             }
         }
 
